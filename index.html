@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>Love</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4 text-center">Love Calculator</h1>
+
+      <form id="form" class="text-center">
+        <div class="container d-flex justify-content-center">
+          <div class="form-group m-3">
+            <label for="boy">Your Name</label>
+            <input
+              class="form-control shadow-sm bg-white rounded"
+              id="boy"
+              placeholder="Your Name"
+            />
+          </div>
+
+          <div class="form-group m-3">
+            <label for="girl">Partner Name</label>
+            <input
+              class="form-control shadow-sm bg-white rounded"
+              type="text"
+              id="girl"
+              placeholder="Partner Name"
+            />
+          </div>
+        </div>
+        <button class="btn btn-outline-danger btn-lg shadow rounded">
+          Calculate
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div id="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
